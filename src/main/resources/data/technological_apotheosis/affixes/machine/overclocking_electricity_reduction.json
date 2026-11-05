@@ -1,0 +1,10 @@
+{
+  "type": "technological_apotheosis:machine_overclocking_electricity_reduction",
+  "values": {
+    "epic": {
+      "min": 1.5,
+      "steps": 5,
+      "step": 0.1
+    }
+  }
+}

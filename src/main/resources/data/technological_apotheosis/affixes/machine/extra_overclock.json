@@ -1,0 +1,10 @@
+{
+  "type": "technological_apotheosis:machine_extra_overclock",
+  "values": {
+    "epic": {
+      "min": 1.0,
+      "steps": 3,
+      "step": 1.0
+    }
+  }
+}

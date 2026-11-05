@@ -1,0 +1,13 @@
+{
+  "affix.technological_apotheosis:machine/time_reduction": "急速",
+  "affix.technological_apotheosis:machine/time_reduction.suffix": "超快！",
+  "affix.technological_apotheosis:machine/time_reduction.desc": "该机器的配方时间会减少 %s%%。",
+
+  "affix.technological_apotheosis:machine/electricity_reduction": "节省",
+  "affix.technological_apotheosis:machine/electricity_reduction.suffix": "节俭主义",
+  "affix.technological_apotheosis:machine/electricity_reduction.desc": "该机器的耗电量会减少 %s%%。",
+
+  "affix.technological_apotheosis:machine/parallel": "大量",
+  "affix.technological_apotheosis:machine/parallel.suffix": "阵列",
+  "affix.technological_apotheosis:machine/parallel.desc": "该机器拥有 %d 次额外并行。"
+}

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "net.mmg_atros_an.technological_apotheosis.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "mixins": [
+    "DummyMixin",
+    "apotheosis.AffixConvertLootModifierMixin",
+    "apotheosis.MixinGem",
+    "gtceu.RecipeLogicMixin",
+    "gtceu.WorkableTieredMachineMixin",
+    "minecraft.MixinMinecraftServer"
+  ],
+  "client": [
+  ]
+}

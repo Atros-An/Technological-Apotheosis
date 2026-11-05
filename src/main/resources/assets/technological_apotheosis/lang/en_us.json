@@ -1,0 +1,25 @@
+{
+  "affix.technological_apotheosis:machine/time_reduction": "Accelerated",
+  "affix.technological_apotheosis:machine/time_reduction.suffix": "of Haste",
+  "affix.technological_apotheosis:machine/time_reduction.desc": "This machine operates %s%% faster.",
+
+  "affix.technological_apotheosis:machine/electricity_reduction": "Thrifty",
+  "affix.technological_apotheosis:machine/electricity_reduction.suffix": "of Conservation",
+  "affix.technological_apotheosis:machine/electricity_reduction.desc": "This machine uses %s%% less energy.",
+
+  "affix.technological_apotheosis:machine/parallel": "Batched",
+  "affix.technological_apotheosis:machine/parallel.suffix": "Array",
+  "affix.technological_apotheosis:machine/parallel.desc": "This machine gains %d additional parallel.",
+
+  "affix.technological_apotheosis:machine/overclocking_time_reduction": "Refined",
+  "affix.technological_apotheosis:machine/overclocking_time_reduction.suffix": "of Optimization",
+  "affix.technological_apotheosis:machine/overclocking_time_reduction.desc": "This machine operates %s%% faster per overclock.",
+
+  "affix.technological_apotheosis:machine/overclocking_electricity_reduction": "Voltage-tuned",
+  "affix.technological_apotheosis:machine/overclocking_electricity_reduction.suffix": "of Efficiency",
+  "affix.technological_apotheosis:machine/overclocking_electricity_reduction.desc": "This machine uses %s%% less energy per overclock.",
+
+  "affix.technological_apotheosis:machine/extra_overclock": "Tesla",
+  "affix.technological_apotheosis:machine/extra_overclock.suffix": "of the Current",
+  "affix.technological_apotheosis:machine/extra_overclock.desc": "This machine may exceed its maximum overclock by up to %d levels."
+}

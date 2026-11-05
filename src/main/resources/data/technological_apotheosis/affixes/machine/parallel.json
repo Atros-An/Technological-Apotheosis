@@ -1,0 +1,10 @@
+{
+  "type": "technological_apotheosis:machine_parallel",
+  "values": {
+    "epic": {
+      "min": 3.0,
+      "steps": 4,
+      "step": 1.0
+    }
+  }
+}
