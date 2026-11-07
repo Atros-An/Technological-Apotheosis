@@ -5,6 +5,7 @@ import net.mmg_atros_an.technological_apotheosis.apotheosis.attribute.MachineAtt
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MachineAttributeRegistry {
     private static final Map<ResourceLocation, MachineAttribute> INSTANCE = new HashMap<ResourceLocation, MachineAttribute>();
@@ -17,4 +18,7 @@ public class MachineAttributeRegistry {
         return INSTANCE.get(resourceLocation);
     }
 
+    public static Set<ResourceLocation> getKeys() {
+        return INSTANCE.keySet();
+    }
 }

@@ -7,7 +7,8 @@ import com.gregtechceu.gtceu.api.machine.trait.RecipeLogic;
 import com.gregtechceu.gtceu.api.recipe.GTRecipe;
 import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.MachineAffixContexts;
 import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.overclock.MachineOverclockingAffix;
-import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.ExtraOverclocks;
+import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.extraoverclock.ExtraOverclockParams;
+import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.extraoverclock.ExtraOverclock;
 import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.MachineAffixHelper;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -35,7 +36,7 @@ public class RecipeLogicMixin {
 
         GTRecipe copy = recipe.copy();
         MachineAffixContexts ctx = MachineAffixHelper.getAffixes(metaMachine);
-        ExtraOverclocks.ExtraOverclockParams extraOverclockParams = ExtraOverclocks.getIdentityParams();
+        ExtraOverclockParams extraOverclockParams = ExtraOverclock.getIdentityParams();
         for (MachineAffixContexts.AffixLevelPair pair : ctx.pairs()){
             copy = pair.machineAffix().processRecipe(copy, machine, ctx.rarity(), pair.level());
             if (pair.machineAffix() instanceof MachineOverclockingAffix overclockingAffix) {
@@ -43,7 +44,7 @@ public class RecipeLogicMixin {
             }
         }
 
-        return ExtraOverclocks.applyExtraOverclock(metaMachine, copy, extraOverclockParams).apply(copy);
+        return ExtraOverclock.applyExtraOverclock(metaMachine, copy, extraOverclockParams).apply(copy);
     }
 
 }

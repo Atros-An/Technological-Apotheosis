@@ -11,8 +11,7 @@ import dev.shadowsoffire.placebo.util.StepFunction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.item.ItemStack;
-import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.MachineAffix;
-import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.ExtraOverclocks;
+import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.extraoverclock.ExtraOverclockParams;
 
 import java.util.Map;
 
@@ -45,7 +44,7 @@ public class MachineExtraOverclockAffix extends MachineOverclockingAffix {
     }
 
     @Override
-    public ExtraOverclocks.ExtraOverclockParams updateOverclockParams(ExtraOverclocks.ExtraOverclockParams params, GTRecipe recipe, IRecipeLogicMachine machine, LootRarity rarity, float level) {
-        return new ExtraOverclocks.ExtraOverclockParams(params.extraDurationFactor(),params.extraVoltageFactor(),params.maxOcs() + (int) getTrueLevel(rarity, level));
+    public ExtraOverclockParams updateOverclockParams(ExtraOverclockParams params, GTRecipe recipe, IRecipeLogicMachine machine, LootRarity rarity, float level) {
+        return params.updateMaxOcs(params.getMaxOcs() + (int) getTrueLevel(rarity, level));
     }
 }

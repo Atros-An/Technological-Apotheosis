@@ -2,7 +2,6 @@ package net.mmg_atros_an.technological_apotheosis.apotheosis.affix.overclock;
 
 import com.gregtechceu.gtceu.api.machine.feature.IRecipeLogicMachine;
 import com.gregtechceu.gtceu.api.recipe.GTRecipe;
-import dev.shadowsoffire.apotheosis.adventure.affix.Affix;
 import dev.shadowsoffire.apotheosis.adventure.affix.AffixType;
 import dev.shadowsoffire.apotheosis.adventure.loot.LootCategory;
 import dev.shadowsoffire.apotheosis.adventure.loot.LootRarity;
@@ -13,7 +12,7 @@ import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.MachineAffix;
 import java.util.Map;
 import java.util.Set;
 
-import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.ExtraOverclocks.*;
+import net.mmg_atros_an.technological_apotheosis.apotheosis.affix.util.extraoverclock.ExtraOverclockParams;
 
 public abstract class MachineOverclockingAffix extends MachineAffix {
     public MachineOverclockingAffix(Set<LootCategory> categories, Map<LootRarity, StepFunction> values) {
